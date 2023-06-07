@@ -1,6 +1,10 @@
 module.exports = {
   plugins: ["import", "unused-imports"],
-  extends: ["plugin:import/recommended", "plugin:import/typescript"],
+  extends: [
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "prettier",
+  ],
   rules: {
     "sort-imports": [
       "warn",
