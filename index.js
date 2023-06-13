@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ["disable-autofix", "import", "unused-imports"],
+  plugins: ["import", "unused-imports"],
   extends: [
     "plugin:import/recommended",
     "plugin:import/typescript",
@@ -30,6 +30,8 @@ module.exports = {
         alphabetize: { order: "asc", caseInsensitive: true },
       },
     ],
+
+    "@typescript-eslint/no-unused-vars": "off",
     "unused-imports/no-unused-imports": "warn",
     "unused-imports/no-unused-vars": [
       "warn",
@@ -40,7 +42,6 @@ module.exports = {
         argsIgnorePattern: "^_",
       },
     ],
-    "@typescript-eslint/no-unused-vars": "off",
   },
   settings: { "import/resolver": { typescript: {} } },
 };
