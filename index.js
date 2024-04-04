@@ -1,10 +1,11 @@
 module.exports = {
-  plugins: ["import", "unused-imports"],
   extends: [
     "plugin:import/recommended",
     "plugin:import/typescript",
     "prettier",
   ],
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint", "import", "unused-imports"],
   rules: {
     "sort-imports": [
       "warn",
@@ -30,7 +31,6 @@ module.exports = {
         alphabetize: { order: "asc", caseInsensitive: true },
       },
     ],
-
     "@typescript-eslint/no-unused-vars": "off",
     "unused-imports/no-unused-imports": "warn",
     "unused-imports/no-unused-vars": [
