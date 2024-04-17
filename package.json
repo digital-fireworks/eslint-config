@@ -1,6 +1,6 @@
 {
   "name": "@digital-fireworks/eslint-config",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Digital Fireworks ESLint Config",
   "repository": {
     "type": "git",
