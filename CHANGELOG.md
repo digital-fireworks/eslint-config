@@ -1,5 +1,11 @@
 # @digital-fireworks/eslint-config
 
+## 1.2.6
+
+### Patch Changes
+
+- c1b14c7: lower dependency versions
+
 ## 1.2.5
 
 ### Patch Changes
